@@ -1,0 +1,20 @@
+fastapi
+uvicorn
+
+# LlamaIndex 與 PDF 依賴（固定版本較穩）
+llama-index==0.10.56
+pypdf==4.2.0
+python-multipart
+
+# Day4 Hugging Face
+transformers
+accelerate
+safetensors
+hf_xet # 加速模型下載
+
+sentence-transformers
+chromadb
+transformers
+torch
+spacy
+networkx

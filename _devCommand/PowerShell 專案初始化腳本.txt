@@ -1,0 +1,40 @@
+# === 建立專案根目錄 ===
+New-Item -ItemType Directory -Path "graph-rag-explorer"
+Set-Location "graph-rag-explorer"
+
+# === 建立 backend 結構 ===
+New-Item -ItemType Directory -Path "backend"
+New-Item -ItemType Directory -Path "backend/app"
+New-Item -ItemType Directory -Path "backend/app/routes"
+New-Item -ItemType Directory -Path "backend/app/core"
+
+# 建立後端檔案
+New-Item "backend/app/main.py" -ItemType File
+New-Item "backend/app/routes/upload.py" -ItemType File
+New-Item "backend/app/routes/query.py" -ItemType File
+New-Item "backend/app/core/chunker.py" -ItemType File
+New-Item "backend/app/core/embedder.py" -ItemType File
+New-Item "backend/app/core/retriever.py" -ItemType File
+New-Item "backend/app/core/llm.py" -ItemType File
+New-Item "backend/app/core/graph_builder.py" -ItemType File
+New-Item "backend/app/core/config.py" -ItemType File
+New-Item "backend/requirements.txt" -ItemType File
+New-Item "backend/Dockerfile" -ItemType File
+
+# === 建立 frontend 結構 ===
+New-Item -ItemType Directory -Path "frontend"
+New-Item -ItemType Directory -Path "frontend/src"
+New-Item -ItemType Directory -Path "frontend/src/components"
+
+# 建立前端檔案
+New-Item "frontend/src/App.tsx" -ItemType File
+New-Item "frontend/src/components/UploadBox.tsx" -ItemType File
+New-Item "frontend/src/components/ChatPanel.tsx" -ItemType File
+New-Item "frontend/src/components/GraphView.tsx" -ItemType File
+New-Item "frontend/package.json" -ItemType File
+New-Item "frontend/vite.config.js" -ItemType File
+New-Item "frontend/Dockerfile" -ItemType File
+
+# === 建立 docker-compose 與 README ===
+New-Item "docker-compose.yml" -ItemType File
+New-Item "README.md" -ItemType File
