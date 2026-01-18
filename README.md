@@ -1,7 +1,10 @@
 # System-Oriented AI Architecture Demo (RAG as Example)
+![GraphRAG Overview](Cover.PNG)
+
 
 > 本專案是一個以 RAG 作為載體的系統化工程展示，
 > 重點不在模型效果，而在於如何避免生成式 AI 系統在實務中失控。
+
 
 ## 專案簡介
 
